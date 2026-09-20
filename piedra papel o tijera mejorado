@@ -1,0 +1,50 @@
+import random
+
+print(" JUEGO PIEDRA, PAPEL, TIJERA, LAGARTO, SPOCK ")
+print("Opciones disponibles: Piedra, Papel, Tijera, Lagarto, Spock")
+
+jugador = input("Escribe tu opcion: ")
+
+lista_opciones = ["Piedra", "Papel", "Tijera", "Lagarto", "Spock"]
+compu = random.choice(lista_opciones)
+
+print("La computadora eligio:", compu)
+
+if jugador == compu:
+  print("¡Es un empate!")
+
+elif jugador == "Piedra":
+  if compu == "Tijera" or compu == "Lagarto":
+    print("¡Ganaste!")
+  else:
+    print("Perdiste")
+
+elif jugador == "Papel":
+  if compu == "Piedra" or compu == "Spock":
+    print("¡Ganaste!")
+  else:
+    print("Perdiste...")
+
+elif jugador == "Tijera":
+  if compu == "Papel" or compu == "Lagarto":
+    print("¡Ganaste!")
+  else:
+    print("Perdiste")
+
+elif jugador == "Lagarto":
+  if compu == "Spock" or compu == "Papel":
+    print("¡Ganaste!")
+  else:
+    print("Perdiste")
+
+elif jugador == "Spock":
+  if compu == "Tijera" or compu == "Piedra":
+    print("¡Ganaste!")
+  else:
+    print("Perdiste")
+
+else:
+  print("Opcion no valida. Recuerda escribirla tal cual (ej. Piedra).")}
+
+
+
